@@ -93,5 +93,33 @@ def total_card(incoming):
 list=['A',5,5,'A','A','A',10]
 list=['A', 6, 7, 7]
 sum=total_card(list)
-print(sum)
-print(list)
+#print(sum)
+#print(list)
+
+
+def is_prime(num):
+    #if num ==2:
+     #   return True
+    
+    flag=0
+    for i in range(1,num+1):
+        if (num%i==0):
+            flag+=1
+            
+    
+    if flag==2:
+        return True
+        
+    else:
+        return False
+        
+#print(is_prime(73))
+
+from game_data import data
+import random
+
+print(len(data))
+print(data[49])
+
+for i in range(0,len(data)):
+    print(f"i: {i} random: {random.randint(0,len(data)-1)}")
